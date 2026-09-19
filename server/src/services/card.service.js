@@ -1,12 +1,10 @@
 import Card from "../models/Card.model.js";
 import Board from "../models/Board.model.js";
 
-// All cards belonging to one board, newest first
 export const getCardsByBoard = async (boardId) => {
   return Card.find({ boardId }).sort({ createdAt: -1 });
 };
 
-// Create a new card on a board (checks the board exists first)
 export const createCard = async (boardId, type, content) => {
   const board = await Board.findById(boardId);
   if (!board) {
@@ -19,7 +17,6 @@ export const createCard = async (boardId, type, content) => {
   return card;
 };
 
-// Delete a single card
 export const deleteCard = async (id) => {
   const card = await Card.findById(id);
   if (!card) {

@@ -3,7 +3,7 @@ import { getCards, addCard, removeCard } from "../controllers/card.controller.js
 
 const router = Router();
 
-router.get("/", getCards); // ?boardId=xxxx
+router.get("/", getCards);
 router.post("/", addCard);
 router.delete("/:id", removeCard);
 

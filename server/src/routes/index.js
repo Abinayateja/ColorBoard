@@ -4,7 +4,7 @@ import cardRoutes from "./card.routes.js";
 
 const router = Router();
 
-router.use("/boards", boardRoutes); // -> /api/boards...
-router.use("/cards", cardRoutes); // -> /api/cards...
+router.use("/boards", boardRoutes);
+router.use("/cards", cardRoutes);
 
 export default router;

@@ -1,14 +1,12 @@
 import mongoose from "mongoose";
 
-// A Card belongs to a Board and can be one of three types:
-// text (a note), image (an image URL), or color (a hex/color value).
 const cardSchema = new mongoose.Schema(
   {
     boardId: {
       type: mongoose.Schema.Types.ObjectId,
       ref: "Board",
       required: [true, "boardId is required"],
-      index: true, // speeds up "get all cards for this board" queries
+      index: true, 
     },
     type: {
       type: String,

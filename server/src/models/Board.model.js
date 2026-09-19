@@ -1,6 +1,5 @@
 import mongoose from "mongoose";
 
-// A Board is a collection of creative cards (like a Pinterest board).
 const boardSchema = new mongoose.Schema(
   {
     title: {
@@ -16,7 +15,7 @@ const boardSchema = new mongoose.Schema(
       default: "",
     },
   },
-  { timestamps: true } // adds createdAt and updatedAt automatically
+  { timestamps: true }
 );
 
 const Board = mongoose.model("Board", boardSchema);
