@@ -14,16 +14,10 @@ Express + MongoDB REST API.
 
 
 **Boards page**
-![Boards Page](./screenshots/boards-page.png)
-
-**Creating a board**
-![Create Board](./screenshots/create-board.png)
+![Boards Page](/assets/dashboard.png)
 
 **Board detail page — cards**
-![Board Detail](./screenshots/board-detail.png)
-
-**Adding a card**
-![Add Card](./screenshots/add-card.png)
+![Board Detail](/assets/Detailed-Dashboard.png)
 
 ---
 
